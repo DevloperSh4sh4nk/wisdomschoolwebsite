@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wisdom creative School</title>
+  <meta name="description" content="Official website of Wisdom creative School" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <img src="1000495868.jpg" alt="Wisdom creative School logo" class="logo" />
+        <div>
+          <h1>Wisdom creative School</h1>
+          <small>Inspiring Excellence. Nurturing Character.</small>
+        </div>
+      </div>
+      <nav aria-label="Primary">
+        <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainMenu">☰ Menu</button>
+        <div class="menu" id="mainMenu">
+          <a href="#about" data-tab="about" class="active">About Us</a>
+          <a href="#facilities" data-tab="facilities">Facilities</a>
+          <a href="#academics" data-tab="academics">Academics</a>
+          <a href="#admissions" data-tab="admissions">Admissions</a>
+          <a href="#studentlife" data-tab="studentlife">Student's Life</a>
+          <a href="#alumni" data-tab="alumni">Alumni</a>
+          <a href="#contact" data-tab="contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-background"></div>
+    <div class="container hero-grid">
+      <div>
+        <div class="badges">
+          <span class="badge">CBSE Inspired • Holistic Learning</span>
+          <span class="badge">K–12 • Co-Ed</span>
+        </div>
+        <h2>Where wisdom meets opportunity.</h2>
+        <p>Welcome to Wisdom creative School — a vibrant learning community that blends strong academics with character building, creativity, and sports. Explore our campus, programs, and student life.</p>
+        <div class="cta">
+          <a class="btn primary" href="#admissions" data-tab="admissions">Apply Now</a>
+          <a class="btn" href="#campus-tour" data-tab="facilities">Take a Campus Tour</a>
+        </div>
+      </div>
+      <div class="hero-image-container">
+        <div class="card hero-card">
+          <img alt="School campus illustration" src="red-buildings-households.jpg"/>
+          <div class="image-overlay">
+            <span class="overlay-text">Modern Learning Environment</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tabs -->
+  <main class="container tabs">
+    <!-- Side Navigation (auto-updates per active tab) -->
+    <aside class="sidenav card" id="sideNav" style="padding:1rem">
+      <!-- populated by JS based on active tab -->
+    </aside>
+
+    <!-- Panels -->
+    <section id="about" class="panel active" aria-labelledby="About Us">
+      <!-- School Statistics -->
+      <div class="stats-section">
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-number">500+</div>
+            <div class="stat-label">Students</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">25+</div>
+            <div class="stat-label">Years Experience</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">50+</div>
+            <div class="stat-label">Expert Teachers</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">95%</div>
+            <div class="stat-label">Success Rate</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- About School with Image -->
+      <div class="about-hero">
+        <div class="about-content">
+          <h3 id="about-school">About Wisdom creative School</h3>
+          <p class="muted">Established in 1998, Wisdom creative School is a premier educational institution committed to fostering a culture of lifelong learning, integrity, and service. Our dedicated faculty and modern infrastructure empower students to excel academically and socially.</p>
+          <p class="muted">We believe in nurturing creativity, critical thinking, and character development alongside academic excellence. Our innovative teaching methods and state-of-the-art facilities create an environment where every student can discover their unique potential.</p>
+        </div>
+        <div class="about-image">
+          <img src="Transforming Learning Spaces_ Inspiring Classroom Themes For Enhanced -.jpeg" alt="Students in classroom" />
+        </div>
+      </div>
+
+      <!-- Mission, Vision, Values -->
+      <div class="grid cols-3">
+        <div class="card block mission-card">
+          <div class="icon">🎯</div>
+          <h3 id="mission">Our Mission</h3>
+          <p class="muted">To deliver holistic education that ignites curiosity, builds character, and prepares students to thrive in a dynamic world through innovative teaching and personalized learning.</p>
+        </div>
+        <div class="card block vision-card">
+          <div class="icon">🔮</div>
+          <h3 id="vision">Our Vision</h3>
+          <p class="muted">To be a leading institution recognized for academic excellence, innovation, and inclusive community engagement, shaping tomorrow's leaders and changemakers.</p>
+        </div>
+        <div class="card block values-card">
+          <div class="icon">💎</div>
+          <h3 id="values">Our Values</h3>
+          <p class="muted">Excellence, Integrity, Creativity, Respect, and Service - the core principles that guide our educational philosophy and community culture.</p>
+        </div>
+      </div>
+
+      <!-- Leadership Messages -->
+      <div class="leadership-section">
+        <h3 class="section-title">Leadership Team</h3>
+        <div class="grid cols-2">
+          <div class="card block director-card">
+            <div class="leadership-image">
+              <img src="" alt="Director" />
+            </div>
+            <div class="leadership-content">
+              <h4 id="director-message">Director's Message</h4>
+              <p class="muted">"At Wisdom creative School, we believe every child carries unique potential. Our role is to provide the environment, mentorship, and opportunities to unlock it. We are committed to creating a nurturing space where creativity flourishes and dreams take flight."</p>
+              <div class="signature">- Mrs. fraha, Director</div>
+            </div>
+          </div>
+          <div class="card block principal-card">
+            <div class="leadership-image">
+              <img src="" alt="Principal" />
+            </div>
+            <div class="leadership-content">
+              <h4 id="principal-message">Principal's Message</h4>
+              <p class="muted">"Our classrooms are student-centered, collaborative, and future-focused — ensuring excellence with empathy. We strive to create an inclusive environment where every student feels valued and empowered to reach their full potential."</p>
+              <div class="signature">- Mrs. maameen , Principal</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- School Achievements -->
+      <div class="achievements-section">
+        <h3 class="section-title">Our Achievements</h3>
+        <div class="achievements-grid">
+          <div class="achievement-item">
+            <div class="achievement-icon">🏆</div>
+            <h4>Academic Excellence</h4>
+            <p>Consistent 95%+ board exam results with multiple state toppers</p>
+          </div>
+          <div class="achievement-item">
+            <div class="achievement-icon">🎨</div>
+            <h4>Creative Arts</h4>
+            <p>National level recognition in art, music, and drama competitions</p>
+          </div>
+          <div class="achievement-item">
+            <div class="achievement-icon">⚽</div>
+            <h4>Sports Champions</h4>
+            <p>State and national level victories in multiple sports disciplines</p>
+          </div>
+          <div class="achievement-item">
+            <div class="achievement-icon">🔬</div>
+            <h4>Science Innovation</h4>
+            <p>Students winning science fairs and innovation competitions</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="facilities" class="panel" aria-labelledby="Facilities">
+      <div class="grid cols-2">
+        <div class="card block" id="campus-tour">
+          <h3>Campus Tour</h3>
+          <p class="muted">Discover green courtyards, tech-enabled classrooms, and safe, welcoming spaces for exploration and play.</p>
+          <div class="grid cols-3">
+            <div class="card" style="padding:.5rem"><img alt="Campus" src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=800&auto=format&fit=crop"></div>
+            <div class="card" style="padding:.5rem"><img alt="Library" src="https://images.unsplash.com/photo-1596495578065-8a35f7f27df5?q=80&w=800&auto=format&fit=crop"></div>
+            <div class="card" style="padding:.5rem"><img alt="Sports" src="https://images.unsplash.com/photo-1518081461904-9ac3b3b2b1a5?q=80&w=800&auto=format&fit=crop"></div>
+          </div>
+        </div>
+        <div class="card block" id="classrooms-labs">
+          <h3>Classrooms & Labs</h3>
+          <p class="muted">Smart boards, science labs, computer suites, and maker spaces encourage hands-on learning and innovation.</p>
+        </div>
+        <div class="card block" id="library">
+          <h3>Library</h3>
+          <p class="muted">A dynamic reading hub with print and digital collections, reading programs, and research support.</p>
+        </div>
+        <div class="card block" id="sports-complex">
+          <h3>Sports Complex</h3>
+          <p class="muted">Indoor and outdoor facilities for cricket, football, basketball, athletics, and yoga — guided by certified coaches.</p>
+        </div>
+        <div class="card block" id="transport">
+          <h3>Transport Services</h3>
+          <p class="muted">GPS-enabled buses, trained attendants, and safety-first protocols on all routes.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="academics" class="panel" aria-labelledby="Academics">
+      <div class="grid cols-2">
+        <div class="card block" id="curriculum">
+          <h3>Curriculum Overview</h3>
+          <p class="muted">Balanced emphasis on core subjects, arts, sports, and life skills, aligned with national education standards.</p>
+        </div>
+        <div class="card block" id="subjects">
+          <h3>Subjects Offered</h3>
+          <ul class="muted">
+            <li>English, Hindi, Sanskrit</li>
+            <li>Mathematics, Science (Physics, Chemistry, Biology)</li>
+            <li>Social Science (History, Civics, Geography, Economics)</li>
+            <li>Computer Science, AI Foundations</li>
+            <li>Commerce (XI–XII): Accountancy, Business Studies, Economics</li>
+          </ul>
+        </div>
+        <div class="card block" id="exams">
+          <h3>Examination Policy</h3>
+          <p class="muted">Continuous and comprehensive evaluation with periodic assessments, projects, and end-term examinations.</p>
+        </div>
+        <div class="card block" id="co-curricular">
+          <h3>Co-Curricular Activities</h3>
+          <p class="muted">Music, dance, art, debate, MUN, coding club, robotics, and eco initiatives nurture talents beyond academics.</p>
+        </div>
+        <div class="card block" id="lib-labs">
+          <h3>Library & Laboratories</h3>
+          <p class="muted">Well-equipped labs and research corners support inquiry-based learning across grades.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="admissions" class="panel" aria-labelledby="Admissions">
+      <div class="split">
+        <div class="card block" id="process">
+          <h3>Admission Process</h3>
+          <ol class="muted">
+            <li>Submit online application form</li>
+            <li>Campus interaction/assessment (grade-wise)</li>
+            <li>Document verification</li>
+            <li>Offer & fee payment</li>
+          </ol>
+        </div>
+        <div class="card block" id="eligibility">
+          <h3>Eligibility Criteria</h3>
+          <p class="muted">Age-appropriate admissions from Kindergarten to Grade XII. Transfer cases considered with previous academic records.</p>
+        </div>
+      </div>
+      <div class="card block" id="fees">
+        <h3>Fee Structure</h3>
+        <div class="muted" style="overflow-x:auto">
+          <table>
+            <thead>
+              <tr><th>Grade</th><th>Tuition (Quarterly)</th><th>Transport (Optional)</th><th>Lab/Activity</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>KG</td><td>₹ 12,500</td><td>₹ 3,000</td><td>₹ 1,000</td></tr>
+              <tr><td>I – V</td><td>₹ 14,500</td><td>₹ 3,000</td><td>₹ 1,200</td></tr>
+              <tr><td>VI – VIII</td><td>₹ 16,500</td><td>₹ 3,200</td><td>₹ 1,500</td></tr>
+              <tr><td>IX – X</td><td>₹ 18,500</td><td>₹ 3,500</td><td>₹ 1,800</td></tr>
+              <tr><td>XI – XII</td><td>₹ 21,000</td><td>₹ 3,800</td><td>₹ 2,200</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="card block">
+        <h3>Quick Apply</h3>
+        <form id="applyForm">
+          <div class="split">
+            <div>
+              <label>Student Name<input name="name" required placeholder="Full name"/></label>
+            </div>
+            <div>
+              <label>Class Applying For<select name="class" required>
+                <option value="KG">KG</option>
+                <option value="I">I</option>
+                <option value="II">II</option>
+                <option value="III">III</option>
+                <option value="IV">IV</option>
+                <option value="V">V</option>
+                <option value="VI">VI</option>
+                <option value="VII">VII</option>
+                <option value="VIII">VIII</option>
+                <option value="IX">IX</option>
+                <option value="X">X</option>
+                <option value="XI">XI</option>
+                <option value="XII">XII</option>
+              </select></label>
+            </div>
+          </div>
+          <label>Parent Email<input type="email" name="email" required placeholder="name@example.com"/></label>
+          <label>Phone<input type="tel" name="phone" required placeholder="10-digit number" pattern="[0-9]{10}"/></label>
+          <label>Message<textarea name="message" placeholder="Any specific request or note..."></textarea></label>
+          <button class="btn primary" type="submit">Submit Application</button>
+          <p class="muted tiny" id="applyNote" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <section id="studentlife" class="panel" aria-labelledby="Student's Life">
+      <div class="grid cols-2">
+        <div class="card block" id="clubs">
+          <h3>Clubs & Societies</h3>
+          <p class="muted">Literary, STEM, Eco, Performing Arts, Entrepreneurship, and Community Service clubs meet weekly.</p>
+        </div>
+        <div class="card block" id="sports-activities">
+          <h3>Sports Activities</h3>
+          <p class="muted">Regular coaching, inter-house leagues, fitness challenges, and annual sports meet.</p>
+        </div>
+        <div class="card block" id="events">
+          <h3>Events & Competitions</h3>
+          <p class="muted">Assemblies, exhibitions, Olympiads, hackathons, talent shows, and cultural fests round the year.</p>
+        </div>
+        <div class="card block" id="community-service">
+          <h3>Community Service Programs</h3>
+          <p class="muted">Student-led social impact projects on environment, health, and education with local NGOs.</p>
+        </div>
+        <div class="card block" id="students-council">
+          <h3>Students Council</h3>
+          <p class="muted">Elected representatives organize events, promote student voice, and uphold school values.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="alumni" class="panel" aria-labelledby="Alumni">
+      <div class="split">
+        <div class="card block" id="alumni-registration">
+          <h3>Alumni Registration</h3>
+          <form id="alumniForm">
+            <label>Full Name<input name="alumniName" required /></label>
+            <label>Batch (Year)<input name="batch" type="number" min="1980" max="2099" step="1" required /></label>
+            <label>Email<input type="email" name="alumniEmail" required /></label>
+            <label>Current Profession<input name="profession" /></label>
+            <button class="btn primary" type="submit">Register</button>
+            <p class="muted tiny" id="alumniNote" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+        <div class="card block" id="success-stories">
+          <h3>Success Stories</h3>
+          <p class="muted">Read inspiring journeys of Wisdom alumni making a difference globally.</p>
+          <div id="stories" class="grid">
+            <article class="card block">
+              <h4>Priya Sharma – AI Researcher</h4>
+              <p class="muted">From coding club lead to publishing in top conferences.</p>
+            </article>
+            <article class="card block">
+              <h4>Arjun Mehta – Social Entrepreneur</h4>
+              <p class="muted">Founded a clean-energy startup empowering rural communities.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+      <div class="card block" id="alumni-events">
+        <h3>Alumni Events</h3>
+        <ul class="muted">
+          <li>Homecoming & Alumni Football League</li>
+          <li>Career Mentorship Day</li>
+          <li>Founders' Lecture Series</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="panel" aria-labelledby="Contact">
+      <div class="split">
+        <div class="card block">
+          <h3>Contact Us</h3>
+          <p class="muted">Wisdom creative School<br/>123 Learning Avenue, Knowledge City<br/>Email: info@wps.edu • Phone: +91 9876543210</p>
+          <div class="grid cols-2">
+            <div class="card block">
+              <h4>Office Hours</h4>
+              <p class="muted">Mon – Fri: 9:00 AM – 4:00 PM<br/>Sat: 9:00 AM – 1:00 PM</p>
+            </div>
+            <div class="card block">
+              <h4>Follow</h4>
+              <p class="muted">Facebook • Instagram • LinkedIn</p>
+            </div>
+          </div>
+        </div>
+        <div class="card block">
+          <h3>Enquiry Form</h3>
+          <form id="contactForm">
+            <label>Your Name<input name="cname" required /></label>
+            <label>Email<input type="email" name="cemail" required /></label>
+            <label>Message<textarea name="cmessage" required></textarea></label>
+            <button class="btn primary" type="submit">Send Enquiry</button>
+            <p class="muted tiny" id="contactNote" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <strong>Wisdom creative School</strong>
+        <p class="tiny">© <span id="year"></span> Wisdom creative School. All rights reserved.</p>
+      </div>
+      <div>
+        <strong>Quick Links</strong>
+        <ul class="tiny" style="list-style:none;padding:0">
+          <li><a href="#admissions" data-tab="admissions">Admissions</a></li>
+          <li><a href="#fees" data-tab="admissions">Fee Structure</a></li>
+          <li><a href="#contact" data-tab="contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <strong>Policies</strong>
+        <ul class="tiny" style="list-style:none;padding:0">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Use</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button id="toTop" class="btn" title="Back to top" style="position:fixed;right:16px;bottom:16px;display:none">↑</button>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
+
