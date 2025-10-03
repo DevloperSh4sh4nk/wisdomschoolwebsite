@@ -10,7 +10,7 @@
   --radius: 18px;
 }
 *{box-sizing:border-box}
-html,body{margin:0;background:linear-gradient(180deg,#05940c 0%, #043247 40%, #024911 100%), url('bg.jpg');background-size:cover;background-position:center;background-attachment:fixed;color:var(--text);font-family: system-ui, -apple-system, Segoe UI, Roboto, Inter, "Helvetica Neue", Arial, sans-serif}
+html,body{margin:0;background:linear-gradient(180deg,#e5e7dd 0%, #043247 40%, #a2aca4 100%), url('bg.jpg');background-size:cover;background-position:center;background-attachment:fixed;color:var(--text);font-family: system-ui, -apple-system, Segoe UI, Roboto, Inter, "Helvetica Neue", Arial, sans-serif}
 a{color:inherit;text-decoration:none}
 img{max-width:100%;display:block}
 .container{max-width:1200px;margin:auto;padding:0 1rem}
