@@ -105,48 +105,23 @@ const $ = s=>document.querySelector(s);
 $('#applyForm')?.addEventListener('submit', e=>{
   e.preventDefault();
   $('#applyNote').textContent = 'Thank you! Your application has been received. Our team will contact you soon.';
-  e.target.reset();
+  e.target.reset('shashank@jfknowledge.com');
 });
 $('#alumniForm')?.addEventListener('submit', e=>{
   e.preventDefault();
   $('#alumniNote').textContent = 'Welcome to the Alumni Network! We will reach out with upcoming events.';
-  e.target.reset();
+  e.target.reset('shashank@jfknowledge.com');
 });
 $('#contactForm')?.addEventListener('submit', e=>{
   e.preventDefault();
   $('#contactNote').textContent = 'Thanks for reaching out. We will respond within 2 business days.';
-  e.target.reset();
+  e.target.reset('shashank@jfknowledge.com');
 });
 
 // Back to top
 const toTop = document.getElementById('toTop');
 window.addEventListener('scroll', ()=>{
   toTop.style.display = window.scrollY>400 ? 'inline-block' : 'none';
-});
-toTop.addEventListener('click', ()=> window.scrollTo({top:0, behavior:'smooth'}));
-
-// Scroll Reveal Animation
-const observerOptions = {
-  threshold: 0.1,
-  rootMargin: '0px 0px -50px 0px'
-};
-
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('reveal-active');
-      observer.unobserve(entry.target);
-    }
-  });
-}, observerOptions);
-
-// Initialize scroll reveal after DOM loads
-window.addEventListener('load', () => {
-  const revealElements = document.querySelectorAll('.card.block, .achievement-item, .about-hero, .leadership-section');
-  revealElements.forEach(el => {
-    el.classList.add('reveal');
-    observer.observe(el);
-  });
 });
 
 document.addEventListener('DOMContentLoaded', function() {
