@@ -444,9 +444,20 @@
               <option value="VIII">VIII</option>
             </select></label></div>
           </div>
-          <label>Parent Email<input type="email" name="email" required placeholder="name@example.com"/></label>
-          <label>Phone<input type="tel" name="phone" required placeholder="10-digit number" pattern="[0-9]{10}"/></label>
-          <label>Message<textarea name="message" placeholder="Any specific request or note..."></textarea></label>
+          
+          <div class="split">
+            <div><label>Parent Email
+              <input type="email" name="email" required placeholder="parent@email.com" />
+            </label></div>
+            <div><label>Phone
+              <input type="tel" name="phone" required placeholder="10-digit number" pattern="[0-9]{10}" />
+            </label></div>
+          </div>
+          
+          <label>Message
+            <textarea name="message" placeholder="Any specific request or note..."></textarea>
+          </label>
+          
           <button class="btn primary" type="submit">Submit Application</button>
           <p class="muted tiny" id="applyNote" role="status" aria-live="polite"></p>
         </form>
@@ -529,7 +540,7 @@
         </div>
         <div class="card block hover-lift">
           <h3>Enquiry Form</h3>
-          <form id="contactForm" action="https://formsubmit.co/shashank@jfknowledge.com" method="POST">
+          <form id="contactForm">
             <label>Your Name
               <input name="cname" required />
             </label>
@@ -539,10 +550,6 @@
             <label>Message
               <textarea name="cmessage" required></textarea>
             </label>
-        
-            <!-- Optional: disable captcha and redirect to thank you page -->
-            <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html">
         
             <button class="btn primary" type="submit">Send Enquiry</button>
             <p class="muted tiny" id="contactNote" role="status" aria-live="polite"></p>
