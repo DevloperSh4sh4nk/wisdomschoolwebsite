@@ -985,6 +985,18 @@ textarea {
   resize: vertical;
 }
 
+/* Ensure dropdown options are readable (fix white text on white menu) */
+select option {
+  color: #111827;
+  background: #ffffff;
+}
+
+select option:checked,
+select option:hover {
+  color: #111827;
+  background: #e5e7eb;
+}
+
 /* Footer */
 footer {
   margin: 20px 0 0;
