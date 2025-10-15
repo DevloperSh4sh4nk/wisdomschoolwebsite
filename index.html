@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wisdom Creative School</title>
+  <meta name="description" content="Official website of Wisdom Creative School" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <img src="WISDOM GROUP OF SCHOOL (2).png" alt="Wisdom Creative School logo" class="logo" />
+        <div>
+          <h1>Wisdom Group of Schools</h1>
+          <small>Inspiring Excellence. Nurturing Character.</small>
+        </div>
+      </div>
+      <nav aria-label="Primary">
+        <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div id="mainMenu" class="menu">
+          <a href="#about" data-tab="about" class="active">About Us</a>
+          <a href="#facilities" data-tab="facilities">Facilities</a>
+          <a href="#gallery" data-tab="gallery">Gallery</a>
+          <a href="#academics" data-tab="academics">Academics</a>
+          <a href="#admissions" data-tab="admissions">Admissions</a>
+          <a href="#studentlife" data-tab="studentlife">Student's Life</a>
+          <a href="#alumni" data-tab="alumni">Alumni</a>
+          <a href="#contact" data-tab="contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-background"></div>
+
+    <!-- Decorative Elements -->
+    <div class="floating-shape shape-1"></div>
+    <div class="floating-shape shape-2"></div>
+    <div class="floating-shape shape-3"></div>
+    <div class="floating-shape shape-4"></div>
+
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="badges">
+          <span class="badge">CBSE Inspired • Holistic Learning</span>
+          <span class="badge">K–12 • Co-Ed</span>
+        </div>
+        <h2>Where wisdom meets opportunity.</h2>
+        <p>Welcome to Wisdom Group of Schools — a vibrant learning community that blends strong academics with character building, creativity, and sports. Explore our campus, programs, and student life.</p>
+        <div class="cta">
+          <a class="btn primary" href="#admissions" data-tab="admissions">Apply Now</a>
+          <a class="btn" href="#campus-tour" data-tab="facilities">Take a Campus Tour</a>
+        </div>
+      </div>
+      <div class="hero-image-container">
+        <div class="card hero-card">
+          <img alt="School campus illustration" src="IMG-20251009-WA0033.jpeg"/>
+          <div class="image-overlay">
+            <span class="overlay-text">Modern Learning Environment</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tabs -->
+  <main class="container tabs">
+    <!-- Side Navigation (auto-updates per active tab) -->
+    <aside class="sidenav card" id="sideNav">
+      <!-- populated by JS based on active tab -->
+    </aside>
+
+    <!-- Panels -->
+    <section id="about" class="panel active" aria-labelledby="About Us">
+      <!-- School Statistics -->
+      <div class="stats-section">
+        <div class="stats-grid">
+          <div class="stat-card hover-lift">
+            <div class="stat-icon"><i class="fas fa-user-graduate"></i></div>
+            <div class="stat-number">500+</div>
+            <div class="stat-label">Students</div>
+          </div>
+          <div class="stat-card hover-lift">
+            <div class="stat-icon"><i class="fas fa-calendar-alt"></i></div>
+            <div class="stat-number">25+</div>
+            <div class="stat-label">Years Experience</div>
+          </div>
+          <div class="stat-card hover-lift">
+            <div class="stat-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+            <div class="stat-number">50+</div>
+            <div class="stat-label">Expert Teachers</div>
+          </div>
+          <div class="stat-card hover-lift">
+            <div class="stat-icon"><i class="fas fa-star"></i></div>
+            <div class="stat-number">95%</div>
+            <div class="stat-label">Success Rate</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- About School with Image -->
+      <div class="about-hero">
+        <div class="about-content">
+          <h3 id="about-school">About Wisdom Group of Schools</h3>
+          <p class="muted">Established in 1998, Wisdom Creative School is a premier educational institution committed to fostering a culture of lifelong learning, integrity, and service. Our dedicated faculty and modern infrastructure empower students to excel academically and socially.</p>
+          <p class="muted">We believe in nurturing creativity, critical thinking, and character development alongside academic excellence. Our innovative teaching methods and state-of-the-art facilities create an environment where every student can discover their unique potential.</p>
+        </div>
+        <div class="about-image">
+          <img src="IMG-20251009-WA0028.jpeg" alt="Students in classroom" />
+        </div>
+      </div>
+
+      <!-- Mission, Vision, Values -->
+      <div class="grid cols-3">
+        <div class="card block mission-card hover-lift">
+          <div class="icon"><i class="fas fa-bullseye"></i></div>
+          <h3 id="mission">Our Mission</h3>
+          <p class="muted">At <strong>Wisdom Group of Schools</strong>, our mission is to nurture a generation that embodies the perfect blend of academic excellence, ethical values, and life skills essential for personal growth and societal contribution.</p>
+        </div>
+        
+        <div class="card block vision-card hover-lift">
+          <div class="icon"><i class="fas fa-eye"></i></div>
+          <h3 id="vision">Our Vision</h3>
+          <p class="muted">Our vision is to become a model institution recognized for its ability to integrate modern education with strong ethical principles. We aim to empower students with the knowledge, skills, and moral compass required to thrive in a rapidly evolving world.</p>
+        </div>
+        
+        <div class="card block values-card hover-lift">
+          <div class="icon"><i class="fas fa-gem"></i></div>
+          <h3 id="values">Our Values</h3>
+          <p class="muted">Our educational philosophy and community culture are guided by five core principles: Excellence, Integrity, Creativity, Respect, and Service.</p>
+        </div>
+      </div>
+
+      <!-- Leadership Messages -->
+      <div class="leadership-section">
+        <h3 class="section-title">Leadership Team</h3>
+        <div class="grid cols-2">
+          <div class="leadership-card hover-lift">
+            <div class="leadership-content">
+              <h4 id="director-message">Director's Message</h4>
+              <p class="muted">"At Wisdom Creative School, we believe every child carries unique potential. Our role is to provide the environment, mentorship, and opportunities to unlock it. We are committed to creating a nurturing space where creativity flourishes and dreams take flight."</p>
+              <div class="signature">- Mrs. Fraha, Director</div>
+            </div>
+          </div>
+          <div class="leadership-card hover-lift">
+            <div class="leadership-content">
+              <h4 id="principal-message">Principal's Message</h4>
+              <p class="muted">"Our classrooms are student-centered, collaborative, and future-focused — ensuring excellence with empathy. We strive to create an inclusive environment where every student feels valued and empowered to reach their full potential."</p>
+              <div class="signature">- Mrs. Mamaeen Siddiqui, Principal</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- School Achievements -->
+      <div class="achievements-section">
+        <h3 class="section-title">Our Achievements</h3>
+        <div class="achievements-grid">
+          <div class="achievement-item hover-lift">
+            <div class="achievement-icon"><i class="fas fa-trophy"></i></div>
+            <h4>Academic Excellence</h4>
+            <p>Consistent 95%+ board exam results with multiple state toppers</p>
+          </div>
+          <div class="achievement-item hover-lift">
+            <div class="achievement-icon"><i class="fas fa-palette"></i></div>
+            <h4>Creative Arts</h4>
+            <p>National level recognition in art, music, and drama competitions</p>
+          </div>
+          <div class="achievement-item hover-lift">
+            <div class="achievement-icon"><i class="fas fa-futbol"></i></div>
+            <h4>Sports Champions</h4>
+            <p>State and national level victories in multiple sports disciplines</p>
+          </div>
+          <div class="achievement-item hover-lift">
+            <div class="achievement-icon"><i class="fas fa-flask"></i></div>
+            <h4>Science Innovation</h4>
+            <p>Students winning science fairs and innovation competitions</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="facilities" class="panel" aria-labelledby="Facilities">
+      <div class="grid cols-2">
+        <div class="card block hover-lift" id="campus-tour">
+          <h3>Campus Tour</h3>
+          <p class="muted">At <strong>Wisdom Group of Schools</strong>, we provide a serene and well-equipped campus designed for holistic learning. Our state-of-the-art infrastructure fosters academic excellence and personal growth.</p>
+          <div class="facility-image">
+            <img src="IMG-20251009-WA0026.jpeg" alt="School campus" />
+          </div>
+        </div>
+        
+        <div class="card block hover-lift" id="classrooms-labs">
+          <h3>Classrooms & Labs</h3>
+          <ul class="muted">
+            <li><strong>Smart Classrooms</strong> — Well-lit, ventilated classrooms equipped with digital learning tools</li>
+            <li><strong>Science Labs</strong> — Dedicated Physics, Chemistry, and Biology labs for hands-on learning</li>
+            <li><strong>Computer Lab</strong> — Modern lab with high-speed internet and updated software</li>
+          </ul>
+          <div class="facility-image">
+            <img src="Image_20251014_105409_718.jpeg" alt="Science lab" />
+          </div>
+        </div>
+        
+        <div class="card block hover-lift" id="library">
+          <h3>Library</h3>
+          <ul class="muted">
+            <li>Vast collection of academic books, reference materials, and journals</li>
+            <li>Islamic literature including Tafseer, Hadith, and Seerah books</li>
+            <li>Quiet reading area for self-study and research</li>
+          </ul>
+          <div class="facility-image">
+            <img src="Image_20251014_105408_605.jpeg" alt="School library" />
+          </div>
+        </div>
+        
+        <div class="card block hover-lift" id="sports-complex">
+          <h3>Sports Complex</h3>
+          <ul class="muted">
+            <li>Large playgrounds for outdoor games and athletics</li>
+            <li>Indoor games like chess, table tennis, and badminton</li>
+            <li>Physical training programs and sports competitions</li>
+          </ul>
+          <div class="facility-image">
+            <img src="Image_20251014_105408_396.jpeg" alt="Sports complex" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="panel" aria-labelledby="Gallery">
+      <div class="gallery-section">
+        <h3 class="section-title">Our Gallery</h3>
+        <p class="muted section-subtitle">A visual journey through life at Wisdom Group of Schools</p>
+        
+        <div class="gallery-categories">
+          <button class="gallery-filter active" data-filter="all">All</button>
+          <button class="gallery-filter" data-filter="campus">Campus</button>
+          <button class="gallery-filter" data-filter="events">Events</button>
+          <button class="gallery-filter" data-filter="sports">Sports</button>
+          <button class="gallery-filter" data-filter="academics">Academics</button>
+        </div>
+        
+        <div class="gallery-grid">
+          <div class="gallery-item" data-category="campus">
+            <img src="Image_20251014_105408_258.jpeg" alt="School building front view" />
+            <div class="gallery-overlay">
+              <h4>Main Building</h4>
+              <p>Our state-of-the-art school building</p>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="campus">
+            <img src="Image_20251014_105408_605.jpeg" alt="School library interior" />
+            <div class="gallery-overlay">
+              <h4>Library</h4>
+              <p>Well-stocked library with reading area</p>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="events">
+            <img src="Image_20251015_105353_212.jpeg" alt="Annual day celebration" />
+            <div class="gallery-overlay">
+              <h4>Annual Day</h4>
+              <p>Students performing at annual function</p>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="events">
+            <img src="Image_20251014_105408_858.jpeg" alt="Science exhibition" />
+            <div class="gallery-overlay">
+              <h4>Computer lab</h4>
+              <p>Students showcasing their talent</p>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="sports">
+            <img src="Image_20251015_105353_189.jpeg" alt="Extra activities" />
+            <div class="gallery-overlay">
+              <h4>Extra activities</h4>
+              <p>Annual sports competition</p>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="sports">
+            <img src="Image_20251014_105408_605.jpeg" alt=" extra activities" />
+            <div class="gallery-overlay">
+              <h4></h4>
+              <p> LIBRARIES </p>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="academics">
+            <img src="Image_20251015_105353_383.jpeg" alt="Classroom Learning" />
+            <div class="gallery-overlay">
+              <h4>Classroom Learning</h4>
+              <p>Interactive classroom sessions</p>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="academics">
+            <img src="Image_20251014_105409_696.jpeg" alt="Computer Lab" />
+            <div class="gallery-overlay">
+              <h4>Computer Lab</h4>
+              <p>Hands-on learning in our labs</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="gallery-cta">
+          <p class="muted">Want to see more of our campus life?</p>
+          <a class="btn primary" href="#contact" data-tab="contact">Schedule a Visit</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="academics" class="panel" aria-labelledby="Academics">
+      <div class="grid cols-2">
+        <div class="card block hover-lift" id="curriculum">
+          <h3>Curriculum Overview</h3>
+          <p class="muted">At <strong>Wisdom Group of Schools</strong>, we provide a <strong>well-rounded curriculum</strong> that integrates modern education with strong Islamic values. Our program follows national education standards while nurturing <strong>moral and spiritual growth</strong>.</p>
+
+          <h4 id="exams">Examination Policy</h4>
+          <p class="muted">Our evaluation system ensures a fair and continuous assessment of students' growth:</p>
+          <ul class="muted">
+            <li><strong>Formative Assessments</strong> — periodic exams and class tests</li>
+            <li><strong>Summative Assessments</strong> — mid-term and final exams</li>
+            <li><strong>Regular Quran &amp; Islamic Studies Assessments</strong></li>
+            <li><strong>Parent Feedback</strong> — progress reports and discussions</li>
+          </ul>
+        </div>
+
+        <div class="card block hover-lift" id="subjects">
+          <h3>Subjects Offered</h3>
+          <p class="muted">A balanced mix of modern academics and Islamic education to support both scholastic achievement and spiritual growth.</p>
+          <div class="subjects-grid">
+            <div class="subject-category">
+              <h4><i class="fas fa-book"></i> Modern Education</h4>
+              <p class="muted">English, Mathematics, Science, Social Studies, Computer Science, General Knowledge, Art &amp; Craft</p>
+            </div>
+            <div class="subject-category">
+              <h4><i class="fas fa-quran"></i> Islamic Education</h4>
+              <p class="muted">Quranic Studies (Nazra &amp; Hifz), Arabic Language, Islamic Studies (Fiqh, Hadith, Seerah), Moral Education</p>
+            </div>
+            <div class="subject-category">
+              <h4><i class="fas fa-language"></i> Languages</h4>
+              <p class="muted">Hindi, Urdu</p>
+            </div>
+            <div class="subject-category">
+              <h4><i class="fas fa-running"></i> Co-curricular</h4>
+              <p class="muted">Physical Education, Music, Life Skills</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card block hover-lift" id="co-curricular">
+          <h3>Co-curricular Activities</h3>
+          <p class="muted">We encourage students to become well-rounded through a variety of activities:</p>
+          <ul class="muted">
+            <li>Debates, Quizzes, and Essay Competitions</li>
+            <li>Quran Recitation &amp; Islamic Quiz Competitions</li>
+            <li>Indoor &amp; Outdoor Sports</li>
+            <li>Art &amp; Craft Exhibitions</li>
+            <li>Akhlaq Shows (character-building events)</li>
+            <li>Science Fairs &amp; Coding Workshops</li>
+          </ul>
+        </div>
+
+        <div class="card block hover-lift" id="lib-labs">
+          <h3>Library &amp; Laboratories</h3>
+          <p class="muted">Our campus provides modern learning spaces to enhance knowledge and discovery:</p>
+          <ul class="muted">
+            <li><strong>Library</strong> — A well-stocked collection covering academics, Islamic literature, hadith, and inspirational biographies.</li>
+            <li><strong>Science Labs</strong> — Fully equipped Physics, Chemistry, and Biology labs for hands-on learning.</li>
+            <li><strong>Computer Lab</strong> — Modern systems for coding, programming, and digital literacy.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="admissions" class="panel" aria-labelledby="Admissions">
+      <div class="split">
+        <div class="card block hover-lift" id="process">
+          <h3>Admission Process</h3>
+          <ol class="muted">
+            <li><strong>Registration:</strong> Collect the admission form from the school office or download it from our website.</li>
+            <li><strong>Submission:</strong> Submit the completed form along with required documents.</li>
+            <li><strong>Assessment:</strong> Students from Grade 1 onwards will undergo a basic assessment.</li>
+            <li><strong>Interview:</strong> Parents and students will meet with the school principal.</li>
+            <li><strong>Admission Confirmation:</strong> Selected candidates will receive an admission confirmation slip.</li>
+          </ol>
+        </div>
+        
+        <div class="card block hover-lift" id="eligibility">
+          <h3>Eligibility Criteria</h3>
+          <ul class="muted">
+            <li><strong>Nursery &amp; Kindergarten:</strong> Minimum age as per government norms</li>
+            <li><strong>Grade 1 and Above:</strong> Submission of the previous school's report card and transfer certificate.</li>
+            <li><strong>Islamic Education:</strong> Students must be willing to participate in Islamic studies and moral education.</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="card block hover-lift" id="fees">
+        <h3>Fee Structure</h3>
+        <div class="muted" style="overflow-x:auto">
+          <table>
+            <thead>
+              <tr><th>Grade</th><th>Annual Fee</th><th>Additional Charges</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Nursery to UKG</td><td>₹ -------</td><td>Transport, uniforms, books (separate)</td></tr>
+              <tr><td>Grade 1 to 5</td><td>₹ -------</td><td>Transport, uniforms, books (separate)</td></tr>
+              <tr><td>Grade 6 to 8</td><td>₹ -------</td><td>Transport, uniforms, books (separate)</td></tr>
+            </tbody>
+          </table>
+          <p class="muted tiny">Note: Scholarships and sibling discounts are available. Contact the school office for details.</p>
+        </div>
+      </div>
+      
+      <!-- Quick Apply Form -->
+      <div class="card block hover-lift">
+        <h3>Quick Apply</h3>
+        <form id="applyForm">
+          <div class="split">
+            <div><label>Student Name<input name="name" required placeholder="Full name"/></label></div>
+            <div><label>Class Applying For<select name="class" required>
+              <option value="Nursery">Nursery</option>
+              <option value="LKG">LKG</option>
+              <option value="UKG">UKG</option>
+              <option value="I">I</option>
+              <option value="II">II</option>
+              <option value="III">III</option>
+              <option value="IV">IV</option>
+              <option value="V">V</option>
+              <option value="VI">VI</option>
+              <option value="VII">VII</option>
+              <option value="VIII">VIII</option>
+            </select></label></div>
+          </div>
+          <label>Parent Email<input type="email" name="email" required placeholder="name@example.com"/></label>
+          <label>Phone<input type="tel" name="phone" required placeholder="10-digit number" pattern="[0-9]{10}"/></label>
+          <label>Message<textarea name="message" placeholder="Any specific request or note..."></textarea></label>
+          <button class="btn primary" type="submit">Submit Application</button>
+          <p class="muted tiny" id="applyNote" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+        
+    <section id="studentlife" class="panel" aria-labelledby="Student's Life">
+      <div class="grid cols-2">
+        <div class="card block hover-lift" id="clubs">
+          <h3><i class="fas fa-users"></i> Clubs & Societies</h3>
+          <p class="muted">Literary, STEM, Eco, Performing Arts, Entrepreneurship, and Community Service clubs meet weekly.</p>
+        </div>
+        <div class="card block hover-lift" id="sports-activities">
+          <h3><i class="fas fa-running"></i> Sports Activities</h3>
+          <p class="muted">Regular coaching, inter-house leagues, fitness challenges, and annual sports meet.</p>
+        </div>
+        <div class="card block hover-lift" id="events">
+          <h3><i class="fas fa-calendar-alt"></i> Events & Competitions</h3>
+          <p class="muted">Assemblies, exhibitions, Olympiads, hackathons, talent shows, and cultural fests round the year.</p>
+        </div>
+        <div class="card block hover-lift" id="community-service">
+          <h3><i class="fas fa-hands-helping"></i> Community Service Programs</h3>
+          <p class="muted">Student-led social impact projects on environment, health, and education with local NGOs.</p>
+        </div>
+        <div class="card block hover-lift" id="students-council">
+          <h3><i class="fas fa-user-friends"></i> Students Council</h3>
+          <p class="muted">Elected representatives organize events, promote student voice, and uphold school values.</p>
+        </div>
+      </div>
+    </section>
+    
+    <section id="alumni" class="panel" aria-labelledby="Alumni">
+      <div class="split">
+        <div class="card block hover-lift" id="alumni-registration">
+          <h3>Alumni Registration</h3>
+          <p class="muted"><strong>Wisdom Group of Schools</strong> values its former students and invites them to stay connected through our Alumni Network.</p>
+          <ul class="muted">
+            <li>Stay informed about alumni events and school updates.</li>
+            <li>Connect with fellow graduates and mentors.</li>
+            <li>Share your achievements and inspire current students.</li>
+          </ul>
+        </div>
+        
+        <div class="card block hover-lift" id="success-stories">
+          <h3>Success Stories</h3>
+          <p class="muted">Our alumni have excelled in various fields, continuing their education in prestigious institutions and contributing positively to society.</p>
+          <ul class="muted">
+            <li>Academic excellence in higher secondary schools and universities.</li>
+            <li>Leadership in social initiatives and community service.</li>
+            <li>Recognition in competitions, sports, and extracurricular activities.</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="card block hover-lift" id="alumni-events">
+        <h3>Alumni Events</h3>
+        <ul class="muted">
+          <li>Annual Alumni Meet: Reconnect with old friends and teachers.</li>
+          <li>Career Guidance Sessions: Alumni share experiences and guide students.</li>
+          <li>Mentorship Programs: Senior alumni mentor current students.</li>
+        </ul>
+      </div>
+    </section>
+    
+    <section id="contact" class="panel" aria-labelledby="Contact">
+      <div class="split">
+        <div class="card block hover-lift">
+          <h3>Contact Us</h3>
+          <p class="muted">Wisdom Group of Schools<br/>123 Learning Avenue, Knowledge City<br/>Email: info@wisdomschool.edu • Phone: +91 9818238969 </p>
+          <div class="grid cols-2">
+            <div class="card block">
+              <h4><i class="fas fa-clock"></i> Office Hours</h4> 
+              <p class="muted">Mon – Fri: 9:00 AM – 5:00 PM<br/>Sat: 9:00 AM – 1:00 PM</p>
+            </div>
+            <div class="card block">
+              <h4><i class="fas fa-share-alt"></i> Follow Us</h4>
+              <p class="muted">Stay connected through our social media channels</p>
+            </div>
+          </div>
+        </div>
+        <div class="card block hover-lift">
+          <h3>Enquiry Form</h3>
+          <form id="contactForm" action="https://formsubmit.co/shashank@jfknowledge.com" method="POST">
+            <label>Your Name
+              <input name="cname" required />
+            </label>
+            <label>Email
+              <input type="email" name="cemail" required />
+            </label>
+            <label>Message
+              <textarea name="cmessage" required></textarea>
+            </label>
+        
+            <!-- Optional: disable captcha and redirect to thank you page -->
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html">
+        
+            <button class="btn primary" type="submit">Send Enquiry</button>
+            <p class="muted tiny" id="contactNote" role="status" aria-live="polite"></p>
+          </form>
+        </div>        
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <section class="social-media-section">
+      <div class="container">
+        <h3 class="section-title">Connect With Us</h3>
+        <p class="muted section-subtitle">Follow us on social media to stay updated with the latest news, events, and achievements</p>
+        
+        <div class="social-links">
+          <a href="https://www.facebook.com/profile.php?id=61581925535879" target="_blank" class="social-link facebook">
+            <i class="fab fa-facebook-f social-icon"></i>
+            <span>Facebook</span>
+          </a>
+          
+          <a href="https://www.instagram.com/wisdomgroupofschool_/?hl=en" target="_blank" class="social-link instagram">
+            <i class="fab fa-instagram social-icon"></i>
+            <span>Instagram</span>
+          </a>
+          
+          <a href="https://x.com/wisdomgrpofschl" target="_blank" class="social-link twitter">
+            <i class="fab fa-twitter social-icon"></i>
+            <span>Twitter</span>
+          </a>
+          
+          <a href="https://www.youtube.com/@Wisdomgroupofschool" target="_blank" class="social-link youtube">  
+            <i class="fab fa-youtube social-icon"></i>
+            <span>YouTube</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  
+    <div class="container footer-grid">
+      <div>
+        <strong>Wisdom Group of Schools</strong>
+        <p class="tiny">© <span id="year"></span> Wisdom Group of Schools. All rights reserved.</p>
+      </div>
+      <div>
+        <strong>Quick Links</strong>
+        <ul class="tiny" style="list-style:none;padding:0">
+          <li><a href="#admissions" data-tab="admissions">Admissions</a></li>
+          <li><a href="#fees" data-tab="admissions">Fee Structure</a></li>
+          <li><a href="#contact" data-tab="contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <strong>Policies</strong>
+        <ul class="tiny" style="list-style:none;padding:0">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Use</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button id="toTop" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
