@@ -8,6 +8,9 @@
     <link rel="icon" type="image/png" href="WISDOM GROUP OF SCHOOL (2).png" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   </head>
   
 <body>
@@ -28,7 +31,7 @@
           <span></span>
         </button>
         <div id="mainMenu" class="menu">
-          <a href="#about" data-tab="about" class="active">About Us</a>
+          <a href="#Home" data-tab="Home" class="active">Home</a>
           <a href="#facilities" data-tab="facilities">Facilities</a>
           <a href="#gallery" data-tab="gallery">Gallery</a>
           <a href="#academics" data-tab="academics">Academics</a>
@@ -293,8 +296,8 @@
           <div class="gallery-item" data-category="sports">
             <img src="Image_20251014_105408_605.jpeg" alt=" extra activities" />
             <div class="gallery-overlay">
-              <h4></h4>
-              <p> LIBRARIES </p>
+              <h4>Library</h4>
+              <p>  </p>
             </div>
           </div>
           <div class="gallery-item" data-category="academics">
@@ -520,6 +523,31 @@
           <li>Mentorship Programs: Senior alumni mentor current students.</li>
         </ul>
       </div>
+
+      <div class="card block hover-lift" id="alumni-reviews">
+        <h3>Alumni Reviews & Social Reels</h3>
+        <p class="muted">Hear directly from our ex-students. Explore reels, short videos, and posts featuring their experiences and feedback.</p>
+        <div class="grid cols-3 social-review-grid">
+          <a class="card hover-lift" href="https://www.instagram.com/reel/DQI-KpRkpIs/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank" rel="noopener" aria-label="View Instagram Reels">
+            <div class="block">
+              <h4><i class="fab fa-instagram"></i> Instagram Reels</h4>
+              <p class="muted">Student stories & campus highlights</p>
+            </div>
+          </a>
+          <a class="card hover-lift" href="https://www.youtube.com/@Wisdomgroupofschool/shorts" target="_blank" rel="noopener" aria-label="Watch YouTube Shorts">
+            <div class="block">
+              <h4><i class="fab fa-youtube"></i> YouTube Shorts</h4>
+              <p class="muted">Quick alumni testimonials</p>
+            </div>
+          </a>
+          <a class="card hover-lift" href="https://www.facebook.com/profile.php?id=61581925535879" target="_blank" rel="noopener" aria-label="Read Facebook Reviews">
+            <div class="block">
+              <h4><i class="fab fa-facebook-f"></i> Facebook Reviews</h4>
+              <p class="muted">Feedback from our community</p>
+            </div>
+          </a>
+        </div>
+      </div>
     </section>
     
     <section id="contact" class="panel" aria-labelledby="Contact">
@@ -593,21 +621,21 @@
     <div class="container footer-grid">
       <div>
         <strong>Wisdom Group of Schools</strong>
-        <p class="tiny">© <span id="year"></span> Wisdom Group of Schools. 2025 All rights reserved.</p>
+        <p class="tiny">© <span id="year"></span> Wisdom Group of Schools. All rights reserved.</p>
       </div>
       <div>
         <strong>Quick Links</strong>
-        <ul class="tiny" style="list-style:none;padding:0">
-          <li><a href="#admissions" data-tab="admissions">Admissions</a></li>
-          <li><a href="#fees" data-tab="admissions">Fee Structure</a></li>
-          <li><a href="#contact" data-tab="contact">Contact</a></li>
+        <ul class="tiny list-unstyled">
+          <li><a class="footer-link" href="#admissions" data-tab="admissions">Admissions</a></li>
+          <li><a class="footer-link" href="#fees" data-tab="admissions">Fee Structure</a></li>
+          <li><a class="footer-link" href="#contact" data-tab="contact">Contact</a></li>
         </ul>
       </div>
       <div>
         <strong>Policies</strong>
-        <ul class="tiny" style="list-style:none;padding:0">
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Terms of Use</a></li>
+        <ul class="tiny list-unstyled">
+          <li><a class="footer-link" href="#">Privacy Policy</a></li>
+          <li><a class="footer-link" href="#">Terms of Use</a></li>
         </ul>
       </div>
     </div>
