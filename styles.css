@@ -373,6 +373,88 @@ header {
   font-weight: 500;
 }
 
+.hero-highlights {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0,1fr));
+  gap: 1rem;
+}
+
+.highlight-item {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+  padding: .85rem 1rem;
+  border: 1px solid var(--card-border);
+  background: var(--card-bg);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+
+.highlight-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 35px rgba(34,197,94,0.2);
+  border-color: rgba(34,197,94,0.3);
+}
+
+.highlight-item i {
+  color: var(--secondary);
+  font-size: 1.25rem;
+}
+
+.h-title {
+  font-weight: 600;
+  color: var(--text);
+  line-height: 1.2;
+}
+
+.h-sub {
+  color: var(--text-muted);
+  font-size: .85rem;
+  line-height: 1.2;
+}
+
+.scroll-indicator {
+  position: absolute;
+  right: 24px;
+  bottom: 24px;
+  transform: none;
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  color: var(--text-muted);
+  text-decoration: none;
+  padding: .4rem .75rem;
+  border-radius: 999px;
+  border: 1px solid var(--card-border);
+  background: rgba(15,23,42,0.6);
+  backdrop-filter: blur(8px);
+  transition: var(--transition);
+  z-index: 2;
+}
+
+.scroll-indicator .dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--secondary);
+  animation: pulse 1.6s ease-in-out infinite;
+}
+
+.scroll-indicator .text { font-size: .85rem; }
+
+.scroll-indicator:hover { color: var(--text); transform: translateY(-2px); }
+
+@media (max-width: 768px) {
+  .scroll-indicator {
+    right: 16px;
+    bottom: 16px;
+    padding: .35rem .65rem;
+    gap: .4rem;
+  }
+}
+
 /* Tabs Layout */
 .tabs {
   margin: 40px 0 60px;
@@ -1287,6 +1369,10 @@ footer {
     font-size: 2rem;
   }
   
+  .hero-highlights {
+    grid-template-columns: 1fr 1fr;
+  }
+  
   .tabs {
     grid-template-columns: 1fr;
   }
@@ -1297,7 +1383,7 @@ footer {
   }
   
   .grid.cols-3 {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
   
   .stats-grid {
