@@ -1,7 +1,6 @@
 // Utility: build side navigation per tab
 const sideMap = {
-  home: [],
-  about: [
+  home: [
     { id: 'about-school', label: 'About School' },
     { id: 'mission', label: 'Mission' },
     { id: 'vision', label: 'Vision' },
@@ -78,7 +77,7 @@ function renderSide(tab){
 }
 
 // Initial tab from hash or default
-const initial = (location.hash||'#about').replace('#','');
+const initial = (location.hash||'#home').replace('#','');
 setActiveTab(initial);
 
 // Top menu routing
