@@ -15,6 +15,17 @@
   --transition: all 0.3s ease;
 }
 
+:root[data-theme="light"] {
+  --secondary: #0f172a;
+  --dark: #ffffff;
+  --dark-light: #f8fafc;
+  --text: #111827;
+  --text-muted: #4b5563;
+  --card-bg: rgba(255, 255, 255, 0.8);
+  --card-border: rgba(0, 0, 0, 0.08);
+  --shadow: 0 10px 30px rgba(0,0,0,.12);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -28,6 +39,11 @@ html, body {
   font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   line-height: 1.6;
   scroll-behavior: smooth;
+}
+
+html[data-theme="light"],
+html[data-theme="light"] body {
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 50%, #e2e8f0 100%);
 }
 
 a {
@@ -57,12 +73,22 @@ header {
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
 
+html[data-theme="light"] header {
+  background: rgba(255, 255, 255, 0.85);
+}
+
 .nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: .75rem;
   padding: .75rem 0;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
 }
 
 .brand {
@@ -103,8 +129,21 @@ header {
 
 .menu {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: .35rem .6rem;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  white-space: nowrap;
+  padding: .35rem .5rem;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid var(--card-border);
+  backdrop-filter: blur(8px);
+}
+
+html[data-theme="light"] .menu {
+  background: rgba(255,255,255,0.6);
 }
 
 .menu a {
@@ -116,7 +155,14 @@ header {
   transition: var(--transition);
   position: relative;
   overflow: hidden;
+  flex: 0 0 auto;
 }
+
+/* Subtle horizontal scrollbar for nav overflow */
+.menu::-webkit-scrollbar { height: 6px; }
+.menu::-webkit-scrollbar-track { background: transparent; }
+.menu::-webkit-scrollbar-thumb { background: transparent; border-radius: 999px; }
+.menu:hover::-webkit-scrollbar-thumb { background: rgba(148,163,184,0.35); }
 
 .menu a::before {
   content: '';
@@ -179,6 +225,72 @@ header {
   border-radius: 3px;
   transition: var(--transition);
 }
+
+
+.theme-toggle {
+  margin-left: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 28px;
+  padding: 0;
+  border-radius: 999px;
+  position: relative;
+  overflow: visible;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid var(--card-border);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.06);
+}
+
+.theme-toggle i,
+.theme-toggle .toggle-text { display: none; }
+
+/* Switch knob */
+.theme-toggle::after {
+  content: "\f186"; /* moon by default (dark theme) */
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 24px;
+  height: 24px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--secondary), var(--accent));
+  box-shadow: 0 6px 12px rgba(0,0,0,.25);
+  transition: transform .25s ease, background .25s ease, box-shadow .25s ease, color .25s ease;
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 13px;
+}
+
+/* remove separate icon pseudo */
+.theme-toggle::before { content: none; }
+
+/* Track look */
+html[data-theme="light"] .theme-toggle {
+  background: rgba(255,255,255,0.8);
+}
+
+/* Move knob for light theme (slide left) */
+html[data-theme="light"] .theme-toggle::after {
+  transform: translateX(24px);
+  background: linear-gradient(135deg, #fde68a, #f59e0b);
+  box-shadow: 0 6px 12px rgba(0,0,0,.15);
+  content: "\f185"; /* sun */
+  color: #111827;
+}
+
+.theme-toggle:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(59,130,246,0.35);
+}
+
+.theme-toggle:hover::after { box-shadow: 0 8px 16px rgba(0,0,0,.28); }
 
 .menu-toggle[aria-expanded="true"] span:nth-child(1) {
   transform: translateY(9px) rotate(45deg);
