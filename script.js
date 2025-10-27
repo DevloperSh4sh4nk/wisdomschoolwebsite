@@ -44,6 +44,39 @@ const sideMap = {
 const panels = [...document.querySelectorAll('.panel')];
 const mainMenu = document.getElementById('mainMenu');
 const sideNav = document.getElementById('sideNav');
+const themeToggle = document.getElementById('themeToggle');
+const rootEl = document.documentElement;
+
+function setTheme(theme, persist) {
+  const t = theme === 'light' ? 'light' : 'dark';
+  rootEl.setAttribute('data-theme', t);
+  if (themeToggle) {
+    const isLight = t === 'light';
+    themeToggle.setAttribute('aria-pressed', String(isLight));
+    const label = isLight ? 'Switch to Dark' : 'Switch to Light';
+    themeToggle.setAttribute('aria-label', label);
+    themeToggle.setAttribute('title', label);
+  }
+  if (persist) {
+    try { localStorage.setItem('theme', t); } catch(e) {}
+  }
+}
+
+(function initTheme(){
+  let saved;
+  try { saved = localStorage.getItem('theme'); } catch(e) { saved = null; }
+  if (saved) {
+    setTheme(saved, false);
+  } else {
+    const prefersLight = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
+    setTheme(prefersLight ? 'light' : 'dark', false);
+  }
+})();
+
+themeToggle?.addEventListener('click', ()=>{
+  const current = rootEl.getAttribute('data-theme') === 'light' ? 'light' : 'dark';
+  setTheme(current === 'light' ? 'dark' : 'light', true);
+});
 
 function setActiveTab(tab){
   // top nav
